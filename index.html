@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Scale Sutra helps businesses grow with thoughtful websites, e-commerce solutions, SEO, performance marketing and digital strategy.">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>The Scale Sutra | Thoughtful Digital Growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#202a27;--muted:#65716b;--paper:#f7f5ef;--white:#fffefa;--green:#244c3d;--lime:#d7e5a4;--line:#e5e4da;--orange:#d77a4b}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:-.5px}.mark{width:38px;height:38px;border-radius:50% 50% 50% 8px;background:var(--green);color:var(--lime);display:grid;place-items:center;font-family:"Playfair Display";font-size:21px}
+    .brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:2.1px;text-transform:uppercase;font-weight:600;margin-top:-4px}
+    .navlinks{display:flex;gap:30px;align-items:center;font-size:13px;color:#4e5b54}.navlinks a:hover{color:var(--orange)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:4px;background:var(--green);color:white;font-weight:600;font-size:13px;transition:.2s;border:1px solid var(--green)}
+    .btn:hover{background:#17382c;transform:translateY(-2px)}.btn.light{background:transparent;color:var(--green)}.btn.light:hover{background:var(--green);color:white}
+    .hero{padding:96px 0 88px;display:grid;grid-template-columns:1.12fr .88fr;gap:64px;align-items:center}
+    .eyebrow{font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:#66806f;font-weight:700;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--orange)}
+    h1,h2,h3{font-family:"Playfair Display",serif;font-weight:600;line-height:1.08;letter-spacing:-1.2px}h1{font-size:clamp(48px,6vw,76px);margin:22px 0}h1 em{color:var(--green);font-weight:500} .hero p{font-size:16px;color:var(--muted);max-width:530px;line-height:1.85}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.note{font-size:11px;color:var(--muted);margin-top:22px}
+    .visual{min-height:430px;position:relative;background:var(--green);border-radius:48% 48% 8px 8px;padding:34px;overflow:hidden;color:white;display:flex;align-items:end}
+    .visual:before{content:"";position:absolute;width:330px;height:330px;border:1px solid #789181;border-radius:50%;top:35px;left:50%;transform:translateX(-50%)}
+    .visual:after{content:"";position:absolute;width:235px;height:235px;border:1px solid #789181;border-radius:50%;top:83px;left:50%;transform:translateX(-50%)}
+    .orbit{position:absolute;z-index:1;top:125px;left:50%;transform:translateX(-50%);width:150px;height:150px;border-radius:50%;background:var(--lime);color:var(--green);display:grid;place-items:center;text-align:center;font-family:"Playfair Display";font-size:25px;line-height:1.05;box-shadow:0 0 0 12px #ffffff0c}
+    .orbit span{font-family:"DM Sans";font-size:9px;letter-spacing:2px;text-transform:uppercase;display:block;margin-top:7px}
+    .visual-copy{position:relative;z-index:2;max-width:250px}.visual-copy strong{font-family:"Playfair Display";font-size:26px;font-weight:500}.visual-copy p{font-size:12px;color:#d4ded6;margin-bottom:0}
+    .spark{position:absolute;color:var(--lime);font-size:30px}.s1{top:62px;left:50px}.s2{right:45px;top:180px;font-size:18px}
+    .strip{background:var(--lime);padding:17px 0;color:var(--green);font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;overflow:hidden;white-space:nowrap}
+    .strip span{padding:0 28px}.strip b{color:var(--orange);font-size:17px}
+    section{padding:88px 0}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:38px}.section-head h2{font-size:clamp(35px,4vw,52px);margin:14px 0 0;max-width:570px}.section-head p{max-width:350px;color:var(--muted);font-size:14px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{background:var(--white);border:1px solid var(--line);padding:28px;min-height:235px;transition:.2s}.service:hover{transform:translateY(-5px);border-color:#a8b99e}.number{font-size:11px;color:var(--orange);letter-spacing:1px}.service h3{font-size:25px;margin:25px 0 12px}.service p{font-size:13px;color:var(--muted);margin:0}.service .arrow{display:block;margin-top:22px;color:var(--green);font-size:20px}
+    .about{background:#eeeee5}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center}.about-card{background:var(--green);color:white;padding:38px;min-height:310px;display:flex;flex-direction:column;justify-content:space-between}.about-card .big{font-family:"Playfair Display";font-size:45px;line-height:1.05;color:var(--lime)}.about-card p{font-size:12px;color:#d5ded6;max-width:260px}.about-copy h2{font-size:clamp(36px,4vw,51px);margin:17px 0}.about-copy>p{color:var(--muted);font-size:14px;max-width:600px}.principles{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}.principle{border-top:1px solid #d2d5c9;padding-top:13px}.principle strong{font-size:13px}.principle p{font-size:12px;color:var(--muted);margin:5px 0}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{border-top:1px solid #c9cec4;padding-top:18px}.step span{color:var(--orange);font-size:11px;font-weight:700}.step h3{font-size:22px;margin:17px 0 9px}.step p{font-size:12px;color:var(--muted)}
+    .cta{background:var(--green);color:white;padding:70px 0}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}.cta h2{font-size:clamp(36px,4vw,54px);max-width:650px;margin:12px 0}.cta p{color:#d5ded6;font-size:13px}.cta .btn{background:var(--lime);color:var(--green);border-color:var(--lime);white-space:nowrap}.cta .eyebrow{color:var(--lime)}
+    footer{padding:36px 0 24px}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:center;padding-bottom:25px;border-bottom:1px solid var(--line)}.footer-contact{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;color:var(--muted)}.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:18px;color:#87918a;font-size:11px}
+    @media(max-width:800px){.navlinks{gap:14px}.navlinks a:not(.btn){display:none}.hero{grid-template-columns:1fr;padding:65px 0;gap:40px}.visual{min-height:370px}.services{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr;gap:35px}.process{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:16px}.cta-inner{display:block}.cta .btn{margin-top:15px}}
+    @media(max-width:520px){.wrap{width:min(100% - 32px,1160px)}.nav{height:70px}.brand{font-size:14px}.navlinks .btn{padding:10px 12px;font-size:11px}.hero{padding:52px 0}.hero p{font-size:14px}h1{font-size:49px}.visual{min-height:330px;padding:25px}.orbit{width:128px;height:128px;font-size:21px;top:100px}.visual:before{width:280px;height:280px;top:20px}.visual:after{width:200px;height:200px;top:60px}.services{grid-template-columns:1fr}.service{min-height:190px}.about-card{min-height:260px;padding:28px}.about-card .big{font-size:39px}.principles{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr;gap:24px 15px}.step h3{font-size:19px}.footer-top,.footer-bottom{display:block}.footer-contact{margin-top:18px;display:grid;gap:8px}.footer-bottom span{display:block;margin-top:8px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#home" aria-label="The Scale Sutra home"><span class="mark">S</span><span>the scale sutra<small>strategy • creativity • growth</small></span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#about">About</a><a href="#process">Our approach</a>
+      <a class="btn" href="#contact">Let's talk ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">A smarter way to grow</div>
+        <h1>Build with purpose.<br><em>Scale with clarity.</em></h1>
+        <p>We bring ideas to life through thoughtful digital experiences, practical strategy and creative solutions that help ambitious businesses move forward.</p>
+        <div class="hero-actions"><a class="btn" href="#contact">Start a project ↗</a><a class="btn light" href="#services">Explore services</a></div>
+        <div class="note">Independent digital partner for brands ready for their next chapter.</div>
+      </div>
+      <div class="visual" aria-label="The Scale Sutra brand visual">
+        <span class="spark s1">✳</span><span class="spark s2">✦</span>
+        <div class="orbit">Think<span>create • evolve</span></div>
+        <div class="visual-copy"><strong>Growth is a practice.</strong><p>Small, intentional steps. Meaningful, lasting momentum.</p></div>
+      </div>
+    </div>
+
+    <div class="strip"><span>Digital experiences</span><b>✳</b><span>E-commerce</span><b>✳</b><span>Search visibility</span><b>✳</b><span>Performance marketing</span><b>✳</b><span>Creative direction</span><b>✳</b><span>Digital experiences</span></div>
+
+    <section class="wrap" id="services">
+      <div class="section-head"><div><div class="eyebrow">What we do</div><h2>Everything your next stage needs.</h2></div><p>One connected approach across your digital presence—from the first impression to measurable growth.</p></div>
+      <div class="services">
+        <article class="service"><span class="number">01 / DIGITAL</span><h3>Websites & e-commerce</h3><p>Modern, responsive websites and Shopify storefronts designed to make your brand clear and your customer journey simple.</p><span class="arrow">↗</span></article>
+        <article class="service"><span class="number">02 / VISIBILITY</span><h3>SEO & content</h3><p>Search-friendly foundations, on-page optimisation and useful content that help the right people discover your business.</p><span class="arrow">↗</span></article>
+        <article class="service"><span class="number">03 / REACH</span><h3>Performance marketing</h3><p>Campaign planning, paid social, lead generation and tracking foundations focused on learning what works.</p><span class="arrow">↗</span></article>
+        <article class="service"><span class="number">04 / IDENTITY</span><h3>Branding & creative</h3><p>A consistent visual voice across brand touchpoints, social creatives and digital communication.</p><span class="arrow">↗</span></article>
+        <article class="service"><span class="number">05 / SYSTEMS</span><h3>Digital setup & support</h3><p>Domain guidance, analytics setup, pixels, integrations and practical improvements that keep your digital tools working together.</p><span class="arrow">↗</span></article>
+        <article class="service"><span class="number">06 / NEXT FRONTIER</span><h3>Automation & AI solutions</h3><p>Explore useful automations and AI-assisted workflows that reduce repetitive work and create room to focus.</p><span class="arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-card"><div class="eyebrow">The idea behind the name</div><div class="big">A thoughtful<br>formula for<br>forward motion.</div><p>Scale is the ambition. Sutra is the method. Together, they mean growth with intention.</p></div>
+        <div class="about-copy"><div class="eyebrow">About The Scale Sutra</div><h2>Not just more digital. More meaningful.</h2><p>The Scale Sutra is an independent digital services studio built around a simple belief: good growth starts with understanding. We combine creative thinking and hands-on execution to help businesses build a stronger online presence.</p><p>Whether you're starting from scratch or improving what already exists, the focus stays on clear communication, considered design and solutions that make sense for your goals.</p>
+          <div class="principles"><div class="principle"><strong>Clarity before complexity</strong><p>Simple plans, transparent conversations and purposeful work.</p></div><div class="principle"><strong>Built around your goals</strong><p>No one-size-fits-all packages or unnecessary extras.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="process">
+      <div class="section-head"><div><div class="eyebrow">How we work</div><h2>A clear path from idea to impact.</h2></div><p>Good collaboration should feel straightforward. Here's how we turn a brief into forward momentum.</p></div>
+      <div class="process">
+        <div class="step"><span>STEP 01</span><h3>Discover</h3><p>We understand your business, audience, priorities and what success should look like.</p></div>
+        <div class="step"><span>STEP 02</span><h3>Define</h3><p>We shape the scope, direction, deliverables and a practical plan before work begins.</p></div>
+        <div class="step"><span>STEP 03</span><h3>Create</h3><p>We design, build and refine—with feedback and communication along the way.</p></div>
+        <div class="step"><span>STEP 04</span><h3>Grow</h3><p>We launch, review the details and identify useful next steps for continued improvement.</p></div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="wrap cta-inner"><div><div class="eyebrow">Have something in mind?</div><h2>Let's turn your next idea into meaningful progress.</h2><p>Tell us a little about your project. We'll take it from there.</p></div><a class="btn" href="https://wa.me/919152616125?text=Hi%20The%20Scale%20Sutra%2C%20I%27d%20like%20to%20discuss%20a%20project.">Start a conversation ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="footer-top">
+      <a class="brand" href="#home"><span class="mark">S</span><span>the scale sutra<small>strategy • creativity • growth</small></span></a>
+      <div class="footer-contact"><a href="mailto:dev.infosakshi@gmail.com">dev.infosakshi@gmail.com</a><a href="tel:+919152616125">+91 91526 16125</a><a href="https://wa.me/919152616125">WhatsApp ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> The Scale Sutra. All rights reserved.</span><span>Thoughtfully built for what's next.</span></div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
